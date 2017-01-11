@@ -25,4 +25,18 @@ sudo apt-get install python-software-properties -y
 sudo add-apt-repository ppa:webupd8team/java -y
 sudo apt-get update -y
 
-sudo apt-get install oracle-java8-installer
+sudo apt-get install oracle-java8-installer -y
+
+#Install Laravel
+sudo composer global require "laravel/installer"
+
+#Add all permisions to laravel directory
+sudo chmod 777 -R .composer/
+
+#Install Llum and adminlte packages developed by acacha
+composer global require "acacha/llum=~1.0"
+composer global require "acacha/adminlte-laravel-installer=~3.0"
+
+# Place the composer/vendor in your PATH
+echo 'export PATH="$PATH:$HOME/.composer/vendor/bin"' >> ~/.bashrc
+source ~/.bashrc
