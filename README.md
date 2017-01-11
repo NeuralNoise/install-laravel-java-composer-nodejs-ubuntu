@@ -14,7 +14,9 @@ It is a script that automatically installs the necessary tools to develop applic
  7. Packages [Adminlte](https://github.com/acacha/adminlte-laravel) and [Llum](https://github.com/acacha/llum) developed by [acacha](https://github.com/acacha)
 
 ##Install
-`$ sh sudo install.sh`
+`$ sh install.sh`
+
+When you get to the Java installation, you have to accept the terms and conditions manually
 
 `$ exit #To save changes`
 

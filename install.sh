@@ -30,12 +30,15 @@ sudo apt-get install oracle-java8-installer -y
 #Install Laravel
 sudo composer global require "laravel/installer"
 
-#Add all permisions to laravel directory
+#Add all permisions to composer directory
 sudo chmod 777 -R .composer/
 
 #Install Llum and adminlte packages developed by acacha
 composer global require "acacha/llum=~1.0"
 composer global require "acacha/adminlte-laravel-installer=~3.0"
+
+#Add all permisions to composer directory again
+sudo chmod 777 -R .composer/
 
 # Place the composer/vendor in your PATH
 echo 'export PATH="$PATH:$HOME/.composer/vendor/bin"' >> ~/.bashrc
